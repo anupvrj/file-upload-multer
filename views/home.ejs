@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Home Page</title>
+  
+  <style type="text/css" media="screen">
+    body {
+      background-color: skyblue;
+      text-decoration-color: white;
+      font-size:7em;
+    }
+  </style>
+</head>
+
+<body>
+  <center>Apply for Jobs.</center>
+  <form method="post" action="/submit" enctype="multipart/form-data">
+    <input type="text" name="name" placeholder="Your Full Name">
+    <input type="text" name="email" placeholder="Your Email Name">
+    <input type="text" name ="experience" placeholder="Expereince">
+    <select name="technology">
+        <option >Select Technology</option>
+        <option value"C/C#">C/C#</option> 
+        <option value"Javascript">Javascript</option> 
+        <option value"Java">Java Programming</option> 
+        <option value"Python">Phython</option> 
+    </select>
+    <input type="file" name="resume" accept=".pdf,.docx,.jpg,.jpeg,.png">
+    <input type="submit" value="Submit">
+  </form>
+Your Name is <%= name%>
+</body>
+
+</html>
